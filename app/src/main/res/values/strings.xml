@@ -5,4 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="update_details">Update Details</string>
     <string name="settings">Settings</string>
+    <string-array name="time_frame_options">
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
 </resources>
