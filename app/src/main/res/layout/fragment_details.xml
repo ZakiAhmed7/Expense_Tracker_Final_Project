@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6200EE"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewExpenseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Title"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewExpenseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Amount"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewExpenseTitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewExpenseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Date"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewExpenseAmount"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewExpenseDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center_horizontal"
+        android:text="Expense Description"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/buttonUpdateExpense"
+        android:layout_width="165dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_alignStart="@+id/textViewDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="224dp"
+        android:backgroundTint="#FFA000"
+        android:text="Update Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonDeleteExpense"
+        android:layout_width="165dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_alignEnd="@+id/textViewDescription"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#D32F2F"
+        android:text="Delete Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
