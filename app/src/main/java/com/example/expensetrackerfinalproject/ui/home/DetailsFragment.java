@@ -52,3 +52,4 @@ public class DetailsFragment extends Fragment {
         binding = null; // Release the binding
     }
 }
+
