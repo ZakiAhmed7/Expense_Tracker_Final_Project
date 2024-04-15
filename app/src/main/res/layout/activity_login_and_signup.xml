@@ -64,7 +64,7 @@
         android:id="@+id/group_details_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Group Details.."
+        android:text="Group Details \n Abhijith \n Sumeet \n Suhaib \n Zaki"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
