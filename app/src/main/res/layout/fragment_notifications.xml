@@ -4,18 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#176DBD"
     tools:context=".ui.settings.SettingsFragment">
 
     <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
+        android:id="@+id/name_text"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="250dp"
+        android:text="Name: "
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName_text"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="25dp"
+        android:text="user name"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toEndOf="@+id/name_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <TextView
+        android:id="@+id/Password_text"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/email_text"
+        app:layout_constraintStart_toStartOf="@+id/email_text"
+        app:layout_constraintTop_toBottomOf="@+id/email_text" />
+
+    <TextView
+        android:id="@+id/userEmail_text"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="emailAddress"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/userName_text"
+        app:layout_constraintStart_toStartOf="@+id/userName_text"
+        app:layout_constraintTop_toBottomOf="@+id/userName_text" />
+
+    <TextView
+        android:id="@+id/showPassword_text"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="showPassword"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:drawableEnd="@drawable/unhide_icon"
+        android:drawablePadding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/userEmail_text"
+        app:layout_constraintStart_toStartOf="@+id/userEmail_text"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail_text" />
+
+    <Button
+        android:id="@+id/logut_button"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D13D3D"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword_text" />
+
+    <TextView
+        android:id="@+id/myAccount_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="My Account"
+        android:textColor="#FFFFFF"
+        android:textSize="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
