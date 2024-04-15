@@ -1,3 +1,4 @@
+
 package com.example.expensetrackerfinalproject.database;
 
 import android.content.Context;
@@ -24,3 +25,4 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
 }
+
