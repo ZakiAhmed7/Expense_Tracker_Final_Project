@@ -9,23 +9,24 @@ import androidx.room.Upsert;
 import com.example.expensetrackerfinalproject.model.Expense;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Dao
 public interface ExpenseDAO {
     //Get all expenses to show
     @Query("SELECT * FROM Expense")
-    ArrayList<Expense> getAllExpenses();
+    public List<Expense> getAllExpenses();
 
     // insert a expense
     @Insert
-    boolean addAExpense(Expense expense);
+    public void addAExpense(Expense expense);
 
     @Upsert
     // update an expense details
-    boolean updateAnExpense(int expId, Expense expense);
+    public void updateAnExpense(Expense expense);
 
     @Delete
     // delete an expense
-    boolean deleteExpense(int expId, Expense expense);
+    public void deleteExpense(Expense expense);
 
 }

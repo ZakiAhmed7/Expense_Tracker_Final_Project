@@ -2,11 +2,13 @@ package com.example.expensetrackerfinalproject.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity
 public class Expense {
-    @PrimaryKey
+    @PrimaryKey (autoGenerate = true)
+    @ColumnInfo (name = "id")
     private int expenseID;
     @ColumnInfo (name = "transaction date")
     private String transactionDate;
@@ -19,6 +21,13 @@ public class Expense {
 
     public Expense(int expenseID, String transactionDate, float amount, String title, String description) {
         this.expenseID = expenseID;
+        this.transactionDate = transactionDate;
+        this.amount = amount;
+        this.title = title;
+        this.description = description;
+    }
+    @Ignore
+    public Expense(String transactionDate, float amount, String title, String description) {
         this.transactionDate = transactionDate;
         this.amount = amount;
         this.title = title;
